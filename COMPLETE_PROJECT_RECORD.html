@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalWorkWire - مکمل پروجیکٹ روڈ میپ، ہسٹری اور گائیڈ</title>
+    <style>
+        @page { size: A4; margin: 15mm; }
+        body {
+            font-family: 'Segoe UI', Tahoma, 'Noto Nastaliq Urdu', Arial, sans-serif;
+            line-height: 1.8;
+            color: #1e293b;
+            background-color: #f8fafc;
+            margin: 0;
+            padding: 25px;
+        }
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+        }
+        .header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .header h1 {
+            color: #1e3a8a;
+            margin: 0 0 8px 0;
+            font-size: 26px;
+        }
+        .header p {
+            color: #64748b;
+            margin: 0;
+            font-size: 13px;
+        }
+        .badge-live {
+            background-color: #ecfdf5;
+            color: #065f46;
+            border: 1px solid #a7f3d0;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #10b981;
+            border-radius: 50%;
+        }
+        .live-links-card {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            color: #ffffff;
+            padding: 20px 25px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .live-links-card a {
+            color: #38bdf8;
+            font-weight: bold;
+            text-decoration: underline;
+            word-break: break-all;
+        }
+        .section-title {
+            color: #0f172a;
+            font-size: 20px;
+            font-weight: bold;
+            border-right: 5px solid #2563eb;
+            padding-right: 12px;
+            margin: 35px 0 18px 0;
+        }
+        .timeline-item {
+            position: relative;
+            padding-right: 30px;
+            border-right: 2px solid #e2e8f0;
+            margin-bottom: 25px;
+        }
+        .timeline-dot {
+            position: absolute;
+            right: -7px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background-color: #2563eb;
+            border-radius: 50%;
+        }
+        .timeline-title {
+            font-weight: bold;
+            font-size: 16px;
+            color: #1d4ed8;
+            margin-bottom: 5px;
+        }
+        .chat-bubble {
+            margin-bottom: 15px;
+            padding: 14px 18px;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        .user-bubble {
+            background-color: #f1f5f9;
+            border-right: 4px solid #64748b;
+        }
+        .flora-bubble {
+            background-color: #eff6ff;
+            border-right: 4px solid #2563eb;
+        }
+        .tag {
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 4px;
+            font-size: 13px;
+        }
+        .user-tag { color: #475569; }
+        .flora-tag { color: #1d4ed8; }
+        .info-card {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 18px;
+            margin-bottom: 18px;
+        }
+        .info-card h4 {
+            margin: 0 0 8px 0;
+            color: #1e40af;
+            font-size: 16px;
+        }
+        .footer {
+            margin-top: 40px;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 15px;
+            text-align: center;
+            font-size: 12px;
+            color: #94a3b8;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 10px 14px;
+            border: 1px solid #e2e8f0;
+            text-align: right;
+            font-size: 13px;
+        }
+        th { background-color: #f8fafc; font-weight: bold; }
+        code {
+            background: #e2e8f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+            font-size: 12px;
+            direction: ltr;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div>
+            <h1>GlobalWorkWire - مکمل پروجیکٹ رپورٹ و گائیڈ</h1>
+            <p><strong>ڈائریکٹری:</strong> <code>C:\Users\hp\Downloads\GlobalWorkWire</code> | <strong>تاریخ:</strong> 15 نومبر 2026</p>
+        </div>
+        <div class="badge-live">
+            <span class="pulse-dot"></span>
+            100% لائیو اور خودکار
+        </div>
+    </div>
+
+    <div class="live-links-card">
+        <h3 style="margin: 0 0 10px 0; font-size: 17px; color: #fbbf24;">🌐 پراجیکٹ کے باضابطہ لائیو لنکس</h3>
+        <p style="margin: 4px 0; font-size: 14px;"><strong>لائیو ویب سائٹ:</strong> <a href="https://global-work-wire.vercel.app/" target="_blank">https://global-work-wire.vercel.app/</a></p>
+        <p style="margin: 4px 0; font-size: 14px;"><strong>گٹ ہب ریپوزٹری:</strong> <a href="https://github.com/tari125/global-work-wire" target="_blank">https://github.com/tari125/global-work-wire</a></p>
+    </div>
+
+    <div class="section-title">1. GlobalWorkWire کے تمام مراحل کا تفصیلی خلاصہ (Timeline)</div>
+
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-title">مرحلہ 1: خودکار ویب سائٹ کا آئیڈیا اور سلیکشن</div>
+        <p>ایسی ویب سائٹ پر اتفاق ہوا جو 100% آٹومیشن پر چلے اور بغیر روزمرہ کی محنت کے گوگل ایڈسینس سے کمائی کرے۔ ماڈل: <strong>گلوبل ریموٹ جابز اور لائیو ٹیک نیوز ایگریگیٹر</strong>۔</p>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-title">مرحلہ 2: بین الاقوامی مارکیٹ اور نام کا انتخاب</div>
+        <p>ڈالرز میں زیادہ کمائی (ہائی CPC) کے لیے امریکہ، برطانیہ اور یورپ کو ہدف بنانے کا فیصلہ ہوا۔ باضابطہ نام <strong>GlobalWorkWire</strong> فائنل ہوا مع سلوگن: <em>Connecting Global Careers & Real-Time Tech Pulse</em>۔</p>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-title">مرحلہ 3: لوگوز اور برانڈنگ کا قیام</div>
+        <p>دو پیشہ ورانہ لوگو تیار کیے گئے: 2D ویکٹر لوگو (<code>globalworkwire_logo_flat.jpg</code>) اور پریمیم 3D موک اپ (<code>globalworkwire_logo_mockup.jpg</code>)۔</p>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-title">مرحلہ 4: Next.js 14 ملٹی پیج فریم ورک</div>
+        <p>سائٹ کو ملٹی پیج بنایا گیا: Home (<code>/</code>), Jobs (<code>/jobs</code>), Tech Pulse (<code>/news</code>), About (<code>/about</code>), اور Privacy Policy (<code>/privacy</code>)۔</p>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-title">مرحلہ 5: ٹاپ ویب سائٹس (LinkedIn, Indeed, TechCrunch) کے فیچرز</div>
+        <p>کمپنی ویریفائیڈ بیج، جاب بک مارکنگ، شیئر بٹن، کینڈیڈیٹس کاؤنٹر، ہاٹ کی ورڈز سرچ، اور نیوز اپ ووٹس شامل کیے گئے۔</p>
+    </div>
+
+    <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-title">مرحلہ 6: گٹ ہب اور ورسل پر لائیو پبلشنگ</div>
+        <p>تمام 30 فائلیں گٹ ہب ریپوزٹری <code>global-work-wire</code> پر پش کی گئیں اور ورسل کے کلاؤڈ پر <code>https://global-work-wire.vercel.app/</code> پر کامیابی سے لائیو ہو گئیں۔</p>
+    </div>
+
+    <div class="section-title">2. API کیز اور ڈیٹا فیڈز کی تفصیلی گائیڈ (API Keys Roadmap)</div>
+
+    <div class="info-card">
+        <h4>🌟 1. موجودہ سیٹ اپ: بغیر API Key کے 100% مفت فیڈز</h4>
+        <p>ہماری لائیو ویب سائٹ پر اس وقت جو جابز اور خبریں آ رہی ہیں، ان کے لیے کسی API Key کی ضرورت نہیں ہے۔ یہ پبلک RSS فیڈز سے خودکار چلتی ہیں:</p>
+        <ul>
+            <li><code>https://techcrunch.com/category/artificial-intelligence/feed/</code> (ٹیک اور اے آئی نیوز)</li>
+            <li><code>https://news.ycombinator.com/rss</code> (ہیکر نیوز ٹرینڈز)</li>
+            <li><code>https://www.wired.com/feed/rss</code> (وائرڈ ٹیکنالوجی)</li>
+            <li><code>https://weworkremotely.com/categories/remote-programming-jobs.rss</code> (ریموٹ نوکریاں)</li>
+        </ul>
+    </div>
+
+    <div class="info-card">
+        <h4>🔑 2. مستقبل کی ایڈوانسڈ API کیز اور پورٹلز</h4>
+        <p>اگر آپ مستقبل میں مزید لاکھوں جابز یا لائیو نیوز اے پی آئی جوڑنا چاہیں تو ان پورٹلز سے مفت کیز مل سکتی ہیں:</p>
+        <table>
+            <tr>
+                <th>سروس / پلیٹ فارم</th>
+                <th>مقصد</th>
+                <th>حاصل کرنے کا پورٹل</th>
+            </tr>
+            <tr>
+                <td><strong>RapidAPI (JSearch)</strong></td>
+                <td>دنیا بھر کی تازہ ترین ریموٹ جابز</td>
+                <td><a href="https://rapidapi.com/hub" target="_blank">rapidapi.com/hub</a></td>
+            </tr>
+            <tr>
+                <td><strong>NewsAPI</strong></td>
+                <td>بین الاقوامی بریکنگ نیوز اور کوریج</td>
+                <td><a href="https://newsapi.org/register" target="_blank">newsapi.org/register</a></td>
+            </tr>
+            <tr>
+                <td><strong>Google Gemini AI</strong></td>
+                <td>خبروں اور نوکریوں کی خودکار سمری</td>
+                <td><a href="https://aistudio.google.com/" target="_blank">aistudio.google.com</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="info-card">
+        <h4>🔒 3. API کیز کو محفوظ رکھنے کا طریقہ</h4>
+        <p>کوئی بھی پرائیویٹ API Key پروجیکٹ کے اندر <code>.env.local</code> فائل میں رکھی جاتی ہے۔ یہ فائل گٹ ہب پر نہیں جاتی، اس لیے آپ کی خفیہ کیز ہمیشہ 100 فیصد محفوظ رہتی ہیں۔</p>
+    </div>
+
+    <div class="section-title">3. مکمل مکالمہ اور اہم سوال و جواب</div>
+
+    <div class="chat-bubble user-bubble">
+        <span class="tag user-tag">محمد طارق:</span><br>
+        میں ایسی ویب سائٹ بنانا چاہتا ہوں جو آٹومیشن پہ چلی جائے، مجھے خود کچھ نہ کرنا پڑے یا بہت کم ایفرٹ ہو اور ایڈسینس سے ارننگ ہو۔
+    </div>
+
+    <div class="chat-bubble flora-bubble">
+        <span class="tag flora-tag">فلورا:</span><br>
+        خودکار ماڈلز میں سب سے بہترین ریموٹ جابز اور نیوز کا ایگریگیٹر ہے جو RSS فیڈز اور APIs کے ذریعے خود بخود 24 گھنٹے اپڈیٹ ہوتا رہتا ہے، بغیر روزانہ ہاتھ سے مواد لکھے۔
+    </div>
+
+    <div class="chat-bubble user-bubble">
+        <span class="tag user-tag">محمد طارق:</span><br>
+        یہ ویب سائٹ پاکستان میں چلے گی یا انٹرنیشنل ہوگی؟ کیونکہ ڈالر کمانے ہیں تو انٹرنیشنل لیول پہ کچھ کرنا پڑے گا۔
+    </div>
+
+    <div class="chat-bubble flora-bubble">
+        <span class="tag flora-tag">فلورا:</span><br>
+        ڈالرز کے لیے ہم اسے مکمل گلوبل انگریزی پلیٹ فارم بنائیں گے تاکہ ٹریفک امریکہ اور یورپ سے آئے جہاں فی کلک ریٹ (CPC) 1 سے 5 ڈالر تک ملتا ہے۔
+    </div>
+
+    <div class="chat-bubble user-bubble">
+        <span class="tag user-tag">محمد طارق:</span><br>
+        مجھے GlobalWorkWire کا نام اٹریکٹو لگ رہا ہے، یہ فائنل کریں، اور تمام کام Downloads کے فولڈر GlobalWorkWire میں رکھیں۔
+    </div>
+
+    <div class="chat-bubble flora-bubble">
+        <span class="tag flora-tag">فلورا:</span><br>
+        GlobalWorkWire نام فائنل کر کے لوگوز، تمام گائیڈز اور پورا فریم ورک C:\Users\hp\Downloads\GlobalWorkWire میں تیار کر دیا گیا۔
+    </div>
+
+    <div class="chat-bubble user-bubble">
+        <span class="tag user-tag">محمد طارق:</span><br>
+        ویب سائٹ سنگل پیج ہے، اس کو ملٹی پیج بنائیں اور بتائیں ہائی ٹیک نیوز فیڈ کہاں سے آئے گی؟
+    </div>
+
+    <div class="chat-bubble flora-bubble">
+        <span class="tag flora-tag">فلورا:</span><br>
+        ویب سائٹ کو 5 مکمل پیجز (Home, Jobs, News, About, Privacy) میں تبدیل کر دیا گیا۔ نیوز فیڈ TechCrunch, Hacker News, Wired سے ہر 60 منٹ بعد بیک گراؤنڈ راؤٹ کے ذریعے خودکار طور پر فیچ ہوتی ہے۔
+    </div>
+
+    <div class="chat-bubble user-bubble">
+        <span class="tag user-tag">محمد طارق:</span><br>
+        ٹاپ 3 ویب سائٹس (LinkedIn, Indeed, TechCrunch) کے فیچرز کو ہمارے ڈیزائن کے حساب سے ایڈ آن کریں۔
+    </div>
+
+    <div class="chat-bubble flora-bubble">
+        <span class="tag flora-tag">فلورا:</span><br>
+        LinkedIn سے ویریفائیڈ بیج اور کینڈیڈیٹ کاؤنٹر، Indeed سے جاب سیو، شیئر اور پاپولر چپس، اور TechCrunch سے لائیو اپ ووٹس ایڈ کر دیے گئے۔
+    </div>
+
+    <div class="chat-bubble user-bubble">
+        <span class="tag user-tag">محمد طارق:</span><br>
+        یہ لنک ہے: https://github.com/tari125/global-work-wire۔ کوڈ پش کر کے ورسل پر لائیو کریں۔
+    </div>
+
+    <div class="chat-bubble flora-bubble">
+        <span class="tag flora-tag">فلورا:</span><br>
+        تمام فائلیں گٹ ہب پر پش کر دی گئیں اور ورسل کے ذریعے ویب سائٹ https://global-work-wire.vercel.app/ پر کامیابی سے لائیو کر دی گئی۔
+    </div>
+
+    <div class="chat-bubble user-bubble">
+        <span class="tag user-tag">محمد طارق:</span><br>
+        API کیز وغیرہ مجھے کہاں سے ملیں گی اگر مجھے ضرورت پڑی تو؟
+    </div>
+
+    <div class="chat-bubble flora-bubble">
+        <span class="tag flora-tag">فلورا:</span><br>
+        موجودہ فیڈز مفت ہیں اور کسی کی کے بغیر چلتی ہیں۔ اضافی کیز RapidAPI, NewsAPI اور Google Gemini سے حاصل ہوتی ہیں اور .env.local فائل میں محفوظ رہتی ہیں۔
+    </div>
+
+    <div class="footer">
+        GlobalWorkWire مکمل پروجیکٹ دستاویز | محفوظ مقام: C:\Users\hp\Downloads\GlobalWorkWire
+    </div>
+</div>
+
+</body>
+</html>
