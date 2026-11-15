@@ -1,6 +1,9 @@
 # GlobalWorkWire 🌐
 > **Connecting Global Careers & Real-Time Tech Pulse**
 
+**Live Production URL**: [https://global-work-wire.vercel.app/](https://global-work-wire.vercel.app/)  
+**GitHub Repository**: [https://github.com/tari125/global-work-wire](https://github.com/tari125/global-work-wire)  
+
 Welcome to **GlobalWorkWire**, an automated web platform designed to aggregate high-paying remote job opportunities and trending tech/AI news from Tier-1 countries (USA, UK, Canada, Europe) to maximize organic traffic and Google AdSense revenue.
 
 ---
@@ -8,6 +11,7 @@ Welcome to **GlobalWorkWire**, an automated web platform designed to aggregate h
 ## 📌 Project Overview
 * **Project Name**: GlobalWorkWire
 * **Platform Type**: Automated RSS & API Aggregator (Jobs + Tech News)
+* **Production Status**: 🟢 LIVE on Vercel Edge Network
 * **Target Audience**: Global (USA, UK, Canada, Europe) for High-CPC AdSense Monetization
 * **Location**: `C:\Users\hp\Downloads\GlobalWorkWire`
 * **Lead Architect**: Muhammad Tariq
@@ -22,26 +26,15 @@ All branding materials are stored in this root directory:
 
 ---
 
-## 🚀 Core Features & Automation Plan
-
-### 1. Automated Global Remote Jobs Engine
-* Pulls live job listings from top remote platforms (RemoteOK, WeWorkRemotely, AngelList/Wellfound) via free RSS feeds & public APIs.
-* Categorized automatically into:
-  * Software Engineering & DevOps
-  * AI & Data Science
-  * UI/UX Design & Creative
-  * Marketing & Customer Success
-
-### 2. Live Tech & AI News Hub
-* Auto-fetches real-time tech updates and tutorials from reputable sources (TechCrunch, Wired, HackerNews RSS).
-* Zero daily maintenance: background cron jobs handle publication.
-
-### 3. High-Yield AdSense & SEO Optimization
-* Pre-configured ad placements for high click-through rates (CTR).
-* Programmatic SEO: auto-generated metadata, clean URLs, OpenGraph social cards, sitemap, and schema markup for Google rich snippets.
+## 🚀 Live Multi-Page Architecture
+* **Dashboard / Home**: [`/`](https://global-work-wire.vercel.app/)
+* **Remote Career Directory**: [`/jobs`](https://global-work-wire.vercel.app/jobs)
+* **Real-time AI & Tech Pulse**: [`/news`](https://global-work-wire.vercel.app/news)
+* **About Platform**: [`/about`](https://global-work-wire.vercel.app/about)
+* **Privacy Policy (AdSense Compliant)**: [`/privacy`](https://global-work-wire.vercel.app/privacy)
 
 ---
 
 ## 📂 Documentation & History Files
 * [`automated_website_guide.html`](./automated_website_guide.html) — Interactive HTML guide viewable directly in Chrome/Edge.
-* [`CONVERSATION_HISTORY.md`](./CONVERSATION_HISTORY.md) — Complete transcript and record of all design decisions and discussions.
+* [`CONVERSATION_HISTORY.html`](./CONVERSATION_HISTORY.html) — Complete transcript and record of all design decisions and discussions.
